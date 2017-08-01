@@ -52,7 +52,6 @@
                <h1>
                   Soluciones en Manejo de Materiales
                </h1>
-
                <p class="tagline"></p>
             </div>
          </div>
@@ -102,9 +101,9 @@
             <img  src="img/historia2.png">
          </div>
       </section>
-       <section class="about" id=>
+      <section class="about" id=>
          <div class="container text-center">
-           <h2>Historia</h2>
+            <h2>Historia</h2>
             <p>
                Del 2000 al 2015 nuestra área de fabricación crecio de 1500 a 7500 m2 , actualmente se construye una segunda planta con más de 5000m2 de construcción Sobre un terreno de 20.000 m2.
             </p>
@@ -998,7 +997,7 @@
       <section class="portfolio" id="portfolio">
          <div class="container text-center">
             <h2>
-               Casos de exito
+               Casos de éxito
             </h2>
             <p>
                Estos son algunos de nuestros productos terminados de varios tipos.
@@ -1222,7 +1221,7 @@
                               Connect with me
                            </h4>
                            <nav class="social-nav">
-                     <a href="javascript:mostrar('Producc')"><i class="fa fa-envelope col-md-12"></i></a>
+                     <a href="javascript:mostrar('produ')"><i class="fa fa-envelope col-md-12"></i></a>
                      </nav>
                      </div></a>
                   </div>
@@ -1242,7 +1241,7 @@
                               Connect with me
                            </h4>
                            <nav class="social-nav">
-                     <a href="javascript:mostrar('CM')"><i class="fa fa-envelope col-md-12"></i></a>
+                     <a href="javascript:mostrar('cm')"><i class="fa fa-envelope col-md-12"></i></a>
                      </nav>
                      </div></a>
                   </div>
@@ -1271,14 +1270,14 @@
             <div class="modal-contents">
                <section id="contacts">
                   <div class="container">
-                  <span class="closes"></span>
+                     <span class="closes"></span>
                      <div class="row">
                         <div class="col-md-12 text-center">
                            <h2 class="section-title">Contactanos</h2>
                         </div>
                      </div>
                      <div class="row">
-                        <div class="col-lg-3 offset-lg-2">
+                        <div class="col-lg-4 offset-lg-2">
                            <div class="info">
                               <div>
                                  <i class="fa fa-map-marker"></i>
@@ -1286,7 +1285,7 @@
                               </div>
                               <div>
                                  <i class="fa fa-envelope"></i>
-                                 <p>sales@mexroll.com.mx</p>
+                                 <p id="correo"></p>
                               </div>
                               <div>
                                  <i class="fa fa-phone"></i>
@@ -1303,7 +1302,7 @@
                                     <div class="validation"></div>
                                  </div>
                                  <div class="form-group">
-                                    <input type="email" class="form-control" name="email" id="email" placeholder="Correo Electronico" data-rule="email" data-msg="Please enter a valid email" />
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Correo Electronico" data-rule="email" data-msg="Please enter a valid email"/>
                                     <div class="validation"></div>
                                  </div>
                                  <div class="form-group">
@@ -1443,10 +1442,32 @@
           function mostrar(tipo) {
             console.log(tipo);
              $("#myModals").css({
-               display:'block'
+               display:'block'   
              })
+
+            switch(tipo) {
+               case 'ventas':
+                 tipo = "Ali.Reaza@mexroll.com.mx"
+                 break;
+               case 'auto':
+                 tipo = "Lorenzo.Valenzuela@mexroll.com.mx"
+                 break;
+               case 'ing':
+                  tipo = "Hector.Quezada@mexroll.com.mx"
+                  break;
+               case 'produ':
+                  tipo = "Rodrigo.Maldonado@mexroll.com.mx"
+                  break;
+               case 'cm':
+                  tipo = "Ximena.Caraveo@mexroll.com.mx"
+                  break;
+               case 'admin':
+                  tipo = "Victoria.Vazquez@mexroll.com.mx"
+                  break;
+            }
+           $("#correo").text(tipo)
           }
-         
+                  
           window.onclick = function(event) {
           if (event.target == modals) {
               $("#myModals").css({
