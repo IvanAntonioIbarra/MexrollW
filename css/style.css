@@ -1,38 +1,34 @@
 
-.breadcrumb2 {
+.nav-menu {
     text-align: center;
-    padding: .75rem 1rem;
     margin-bottom: 0rem;
     list-style: none;
     background-color: #eceeef;
     border-radius: .25rem;
 }
 
-ul.breadcrumb2 {
-    padding: 10px 16px;
+ul.nav-menu {
     list-style: none;
     background-color: #292b2c;
-    font-size: 17px;
+    
     /* text-align: center; */
 }
 
-ul.breadcrumb2 li {
+ul.nav-menu li {
     display: inline;
 }
 
-ul.breadcrumb2 li+li:before {
-    padding: 8px;
+ul.nav-menu li+li:before {
     color: black;
+    padding-right: 30px;
     content: "/\00a0";
 }
 
-ul.breadcrumb2 li a {
-    color: #199eb8;
+ul.nav-menu li a {
     text-decoration: none;
 }
 
-ul.breadcrumb2 li a:hover {
-    color: #01447e;
+ul.nav-menu li a:hover {
     text-decoration: underline;
 }
 
@@ -42,7 +38,7 @@ ul.breadcrumb2 li a:hover {
 }
 
 #contacts h2 {
-    font-family: font-family: 'Poppins', sans-serif;
+    font-family: "Segoe UI";
     color: #199EB8;
 }
 
@@ -147,14 +143,14 @@ ul.breadcrumb2 li a:hover {
 .popup-c{
     color: #199EB8;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Segoe UI";
 }
 
 
 .popup2-c{
     color: #199EB8;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Segoe UI";
 }
 
 .modal {
@@ -208,6 +204,8 @@ ul.breadcrumb2 li a:hover {
     color: #199EB8;
 }
 
+
+
 .about p{
     color: #ffffff;
 }
@@ -223,7 +221,7 @@ ul.breadcrumb2 li a:hover {
 }
 
 body {
-    font-family: 'Poppins', sans-serif; 
+    font-family: "Segoe UI"; 
     font-size: 16px;
 }
 
@@ -261,14 +259,14 @@ ul.breadcrumb li a:hover {
 }
 
 h1, h2, h3, h4, h5, h6, {
-    font-family: font-family: 'Poppins', sans-serif;
+    font-family: "Segoe UI";
 }
 
 p {
     line-height: 1.55;
     color: #333;
     font-size: 400;
-    font-family: font-family: 'Poppins', sans-serif;
+    font-family: "Segoe UI";
 }
 
 h1 {
@@ -302,7 +300,7 @@ a {
 
 .btn {
     background-color: #199EB8;
-    font-family: font-family: 'Poppins', sans-serif;    font-weight: 800;
+    font-family: "Segoe UI";    font-weight: 800;
     color: #fff;
     padding: 25px 55px;
     border-radius: 50px;
@@ -409,7 +407,7 @@ a:hover {
 }
 
 .tagline {
-    font-family: font-family: 'Poppins', sans-serif;
+    font-family: "Segoe UI";
     font-size: 26px;
     margin: 45px 0 75px 0;
     color: #fff;
@@ -430,7 +428,7 @@ a:hover {
     margin: 0;
     padding: 2px 0;
     line-height: 1;
-    font-family: font-family: 'Poppins', sans-serif;
+    font-family: "Segoe UI";
     font-weight: 700;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -515,7 +513,7 @@ a:hover {
     content: "\f107";
     position: absolute;
     right: 15px;
-    font-family: font-family: 'Poppins', sans-serif; font-weight: normal;
+    font-family: "Segoe UI"; font-weight: normal;
 }
 .sf-arrows ul .sf-with-ul:after {
     content: "\f105";
@@ -537,7 +535,7 @@ a:hover {
     text-decoration: none;
     display: inline-block;
     color: #fff;
-    font-family: font-family: 'Poppins', sans-serif;    font-weight: 300;
+    font-family: "Segoe UI";    font-weight: 300;
     font-size: 15px;
     outline: none;
 }
@@ -690,7 +688,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     display: inline-block;
     width: 160px;
     height: 160px;
-    font-family: font-family: 'Poppins', sans-serif;
+    font-family: "Segoe UI";
     font-weight: 500;
     color: #666;
     border: 6px solid #199EB8;
@@ -705,7 +703,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     line-height: 70px;
     top: -25px;
     right: -15px;
-    font-family: font-family: 'Poppins', sans-serif;
+    font-family: "Segoe UI";
     font-size: 18px;
     background-color: #E04F00;
     position: absolute;
@@ -766,7 +764,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     color: #199EB8;
 }
 .feature-col p {
-    font-family: font-family: 'Poppins', sans-serif;    font-size: 14px;
+    font-family: "Segoe UI";    font-size: 14px;
     color: #999;
 }
 /* ==================================================
@@ -926,7 +924,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 .team .card-title-wrap .card-title,
 .team .card-title-wrap .card-text {
-    font-family: font-family: 'Poppins', sans-serif;
+    font-family: "Segoe UI";
     display: block;
     margin: 0;
 }
@@ -947,7 +945,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding: 80px 0;
 }
 #contact h2 {
-    font-family: font-family: 'Poppins', sans-serif;
+    font-family: "Segoe UI";
     color: #199EB8;
 }
 #contact .info i {
@@ -1048,7 +1046,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 .site-footer .bottom .list-inline a {
     color: #fff;
-    font-family: font-family: 'Poppins', sans-serif;    margin-right: 15px;
+    font-family: "Segoe UI";    margin-right: 15px;
 }
 .site-footer .bottom .list-inline a:hover {
     color: #199EB8;
