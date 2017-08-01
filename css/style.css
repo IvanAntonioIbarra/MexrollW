@@ -1,3 +1,197 @@
+
+.breadcrumb2 {
+    text-align: center;
+    padding: .75rem 1rem;
+    margin-bottom: 0rem;
+    list-style: none;
+    background-color: #eceeef;
+    border-radius: .25rem;
+}
+
+ul.breadcrumb2 {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #292b2c;
+    font-size: 17px;
+    /* text-align: center; */
+}
+
+ul.breadcrumb2 li {
+    display: inline;
+}
+
+ul.breadcrumb2 li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+ul.breadcrumb2 li a {
+    color: #199eb8;
+    text-decoration: none;
+}
+
+ul.breadcrumb2 li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+
+#contacts {
+    background: #f7f7f7;
+    padding: 80px 0;
+}
+
+#contacts h2 {
+    font-family: font-family: 'Poppins', sans-serif;
+    color: #199EB8;
+}
+
+#contacts .info i {
+    font-size: 32px;
+    color: #199EB8;
+    float: left;
+}
+
+#contacts .info p {
+    padding: 0 0 10px 50px;
+    line-height: 24px;
+}
+
+#contacts .form #sendmessage {
+    color: #199EB8;
+    border: 1px solid #199EB8;
+    display: none;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+#contacts .form #errormessage {
+    color: red;
+    display: none;
+    border: 1px solid red;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+#contacts .form #sendmessage.show,
+#contacts .form #errormessage.show,
+#contacts .form .show {
+    display: block;
+}
+
+#contacts .form .validation {
+    color: red;
+    display: none;
+    margin: 0 0 20px;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+#contacts .form input,
+#contacts .form textarea {
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#contacts .form button[type="submit"] {
+    background: #199EB8;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+
+#contacts .form button[type="submit"]:hover {
+    background: #23c2e1;
+}
+
+.modals {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+}
+
+.modal-contents {
+    background-color: #4F4F4F;
+    margin: 15% auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.closes {
+    color: #199EB8;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closes:hover,
+.closes:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.popup-c{
+    color: #199EB8;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.popup2-c{
+    color: #199EB8;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #4F4F4F;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #199EB8;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .table-responsive, td .table-responsive ,th .table-responsive ,th ,td{
      border-collapse:collapse;
      text-align: center;
@@ -17,19 +211,6 @@
 .about p{
     color: #ffffff;
 }
-
-.breadcrumb {
-    text-align: center;
-    }
-
-.breadcrumb {
-    padding: .75rem 1rem;
-    margin-bottom: 0rem;
-    list-style: none;
-    background-color: #eceeef;
-    border-radius: .25rem;
-}
-
 .nuevo {
     color: #199eb8;
 }
@@ -40,10 +221,21 @@
     color: #fff;
     /* background-color: #337ab7; */
 }
+
 body {
     font-family: 'Poppins', sans-serif; 
     font-size: 16px;
 }
+
+.breadcrumb {
+    text-align: center;
+    padding: .75rem 1rem;
+    margin-bottom: 0rem;
+    list-style: none;
+    background-color: #eceeef;
+    border-radius: .25rem;
+}
+
 ul.breadcrumb {
     padding: 10px 16px;
     list-style: none;
@@ -67,31 +259,31 @@ ul.breadcrumb li a:hover {
     color: #01447e;
     text-decoration: underline;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-{
+
+h1, h2, h3, h4, h5, h6, {
     font-family: font-family: 'Poppins', sans-serif;
 }
+
 p {
     line-height: 1.55;
     color: #333;
     font-size: 400;
     font-family: font-family: 'Poppins', sans-serif;
 }
+
 h1 {
     font-size: 52px;
 }
+
 h2 {
     font-size: 30px;
     margin-bottom: 65px;
 }
+
 h3 {
     font-size: 24px;
 }
+
 h4 {
     font-size: 18px;
 }
@@ -115,24 +307,30 @@ a {
     padding: 25px 55px;
     border-radius: 50px;
 }
+
 .btn:hover {
     background-color: #E04F00;
     color: #fff;
 }
+
 .btn:focus {
     color: #fff;
 }
+
 .btn-ghost {
     border: 3px solid #fff;
     background-color: transparent;
 }
+
 .btn-ghost:hover {
     background-color: #fff;
     color: #199EB8;
 }
+
 section {
     padding: 85px 0;
 }
+
 .card {
     position: relative;
     padding: 0;
@@ -141,9 +339,11 @@ section {
     margin: 0;
     overflow: hidden;
 }
+
 a:hover {
     text-decoration: none !important;
 }
+
 .scrolltop {
     display: none;
     position: fixed;
@@ -157,6 +357,7 @@ a:hover {
     text-align: center;
     font-size: 24px;
 }
+
 .scrolltop:hover,
 .scrolltop:active,
 .scrolltop:focus {
@@ -177,6 +378,7 @@ a:hover {
     width: 100%;
     height: 100%;
 }
+
 .hero:after {
     content: '';
     z-index: 0;
@@ -187,6 +389,7 @@ a:hover {
     left: 0;
     top: 0;
 }
+
 .hero .container {
     position: relative;
     z-index: 1;
@@ -195,13 +398,16 @@ a:hover {
     vertical-align: middle;
     width: 100%;
 }
+
 .hero-brand {
     margin-bottom: 75px;
     display: inline-block;
 }
+
 .hero-brand:hover {
     opacity: .75;
 }
+
 .tagline {
     font-family: font-family: 'Poppins', sans-serif;
     font-size: 26px;
